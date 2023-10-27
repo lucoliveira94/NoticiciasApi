@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Arquitetura de Sistemas .NET com Azure\\TechChallenge3\\blognoticias-master\\blognoticias-master\\BlogNoticias\\BlogNoticias.csproj": {}
+    "E:\\Nova pasta\\Projetos\\NoticiasApi\\BlogNoticias\\BlogNoticias.csproj": {}
   },
   "projects": {
-    "D:\\Arquitetura de Sistemas .NET com Azure\\TechChallenge3\\blognoticias-master\\blognoticias-master\\BlogNoticias\\BlogNoticias.csproj": {
+    "E:\\Nova pasta\\Projetos\\NoticiasApi\\BlogNoticias\\BlogNoticias.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Arquitetura de Sistemas .NET com Azure\\TechChallenge3\\blognoticias-master\\blognoticias-master\\BlogNoticias\\BlogNoticias.csproj",
+        "projectUniqueName": "E:\\Nova pasta\\Projetos\\NoticiasApi\\BlogNoticias\\BlogNoticias.csproj",
         "projectName": "BlogNoticias",
-        "projectPath": "D:\\Arquitetura de Sistemas .NET com Azure\\TechChallenge3\\blognoticias-master\\blognoticias-master\\BlogNoticias\\BlogNoticias.csproj",
+        "projectPath": "E:\\Nova pasta\\Projetos\\NoticiasApi\\BlogNoticias\\BlogNoticias.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "D:\\Arquitetura de Sistemas .NET com Azure\\TechChallenge3\\blognoticias-master\\blognoticias-master\\BlogNoticias\\obj\\",
+        "outputPath": "E:\\Nova pasta\\Projetos\\NoticiasApi\\BlogNoticias\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",

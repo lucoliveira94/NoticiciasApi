@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "08fo2NhVsmzWzFAVrlNWhAWx05fkOHyJ9WdEV5tbCeLnGsfoe3TOJkWDQXinUtVVSSEpRxk0OHcelwIM/XS9sg==",
+  "dgSpecHash": "jx61TR+YFx73emgx3PJMZwCUyqSYugEEj7NgxwBgqVDSX3Rn+UtsfL51nJOItwtXIOu6ujbF4hJfq3czwFgNmA==",
   "success": true,
-  "projectFilePath": "D:\\Arquitetura de Sistemas .NET com Azure\\TechChallenge3\\blognoticias-master\\blognoticias-master\\BlogNoticias\\BlogNoticias.csproj",
+  "projectFilePath": "E:\\Nova pasta\\Projetos\\NoticiasApi\\BlogNoticias\\BlogNoticias.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas\\.nuget\\packages\\aspnetcore.healthchecks.sqlserver\\6.0.1\\aspnetcore.healthchecks.sqlserver.6.0.1.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\aspnetcore.healthchecks.ui\\6.0.2\\aspnetcore.healthchecks.ui.6.0.2.nupkg.sha512",

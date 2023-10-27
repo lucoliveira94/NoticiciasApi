@@ -1,7 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BlogNoticias",
+    "\\BlogNoticias\\bin\\Debug",
+    "\\BlogNoticias\\bin\\Debug\\net6.0",
+    "\\BlogNoticias\\Controllers",
+    "\\BlogNoticias\\Data",
+    "\\BlogNoticias\\Models",
+    "\\BlogNoticias\\Profiles"
   ],
-  "SelectedNode": "\\NoticiasApi.sln",
+  "SelectedNode": "\\BlogNoticias\\BlogNoticias.csproj",
   "PreviewInSolutionExplorer": false
 }
