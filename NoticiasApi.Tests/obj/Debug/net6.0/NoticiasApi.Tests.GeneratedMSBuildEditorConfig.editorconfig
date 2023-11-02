@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NoticiasApi.Tests
-build_property.ProjectDir = E:\Nova pasta\Projetos\NoticiasApi\NoticiasApi.Tests\
+build_property.ProjectDir = D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\

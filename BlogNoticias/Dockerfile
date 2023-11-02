@@ -12,6 +12,9 @@ COPY . .
 WORKDIR "/src/BlogNoticias"
 RUN dotnet build "BlogNoticias.csproj" -c Release -o /app/build
 
+RUN dotnet test
+"NoticiasApi.Tests.csproj"
+
 FROM build AS publish
 RUN dotnet publish "BlogNoticias.csproj" -c Release -o /app/publish /p:UseAppHost=false
 

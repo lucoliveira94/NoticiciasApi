@@ -3,8 +3,10 @@ using BlogNoticias.Services;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.IdentityModel.Tokens;
 using NoticiasApi.Data;
 using System.Text;
@@ -20,14 +22,15 @@ builder.Services.AddDbContext<NoticiaContext>(opts =>
 #endregion
 
 #region [Healthcheck]
-builder.Services.AddHealthChecks().AddSqlServer(connectionString);
+builder.Services.AddHealthChecks().
+    AddMySql(connectionString, name: "mysql-check", failureStatus:HealthStatus.Unhealthy);
 
 builder.Services.AddHealthChecksUI(opt =>
 {
     opt.SetEvaluationTimeInSeconds(15);
     opt.MaximumHistoryEntriesPerEndpoint(60);
     opt.SetApiMaxActiveRequests(1);
-    opt.AddHealthCheckEndpoint("default api", "/health");
+    opt.AddHealthCheckEndpoint("NoticiasApi", "/health");
 }).AddInMemoryStorage();
 
 #endregion
@@ -47,10 +50,6 @@ builder.Services.AddScoped<TokenService>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
-#region [Cors]
-builder.Services.AddCors();
-#endregion
 
 #region [JWT]
 builder.Services.AddAuthentication(options =>
@@ -89,15 +88,6 @@ app.UseHealthChecks("/health", new HealthCheckOptions
 
 }).UseHealthChecksUI(h => h.UIPath = "/healthui");
 
-#endregion
-
-#region [Cors]
-app.UseCors(c =>
-{
-    c.AllowAnyHeader();
-    c.AllowAnyMethod();
-    c.AllowAnyOrigin();
-});
 #endregion
 
 app.UseHttpsRedirection();

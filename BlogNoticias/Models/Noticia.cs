@@ -18,13 +18,4 @@ public class Noticia
     public DateTime DataPublicacao { get; set; }
     [Required(ErrorMessage = "O autor da notícia é obrigatório!")]
     public string Editor { get; set; }
-
-    public Noticia(string chapeu, string titulo, string descricao, string editor)
-    {
-        Chapeu = chapeu;
-        Titulo = titulo;
-        Descricao = descricao;
-        Editor = editor;
-    }
-
 }

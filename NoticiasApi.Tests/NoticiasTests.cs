@@ -1,86 +1,86 @@
-﻿using Bogus;
-using NoticiasApi.Tests.fixtures;
+﻿using NoticiasApi.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace NoticiasApi.Tests
 {
-    [Collection(nameof(NoticiasTestsFixtureCollection))]
-    public class NoticiasTests
+    public class NoticiaTests
     {
-        private readonly Faker _faker;
-        public readonly NoticiasTestsFixture _noticiasTestsFixture;
-
-        public NoticiasTests(NoticiasTestsFixture noticiasTestsFixture)
-        {
-            _faker = new Faker();
-            _noticiasTestsFixture = noticiasTestsFixture;
-        }
-
-        [Fact(DisplayName = "Validando se o titulo esta vazio")]
-        [Trait("Categoria", "Validando Noticias")]
-        public void ValidandoExceptionTituloVazio()
-        {
-            // Arrange         
-
-
-            //act
-            var result = Assert.Throws<DomainException>(() => _noticiasTestsFixture.GerarNoticiaTituloVazio());
-
-            //Assert
-            Assert.Equal("O título não pode estar vazio!", result.Message);
-
-        }
-
-        [Fact(DisplayName = "Validando se o chapeu esta vazio")]
-        [Trait("Categoria", "Validando Noticias")]
-        public void ValidandoExceptionChapeuVazio()
+        [Fact]
+        public void Noticia_DeveTerAtributoRequiredNaPropriedadeTitulo()
         {
             // Arrange
-            var Chapeu = "";
-            var Titulo = _faker.Random.String2(40);
-            var Descricao = _faker.Random.String2(100);
-            var Editor = _faker.Name.FullName();
+            var propInfo = typeof(Noticia).GetProperty("Titulo");
 
-            //act
-            var result = Assert.Throws<DomainException>(() => new Noticia(Chapeu, Titulo, Descricao, Editor));
+            // Act
+            var hasRequiredAttribute = propInfo.GetCustomAttributes(typeof(RequiredAttribute), true).Length > 0;
 
-            //Assert
-            Assert.Equal("O chapéu não pode estar vazio!", result.Message);
-
+            // Assert
+            Assert.True(hasRequiredAttribute, "Título é obrigatório");
         }
 
-        [Fact(DisplayName = "Validando se o texto esta vazio")]
-        [Trait("Categoria", "Validando Noticias")]
-        public void ValidandoExceptionDescricaoVazio()
+        [Fact]
+        public void Noticia_DeveTerMaxLength100NaPropriedadeTitulo()
         {
             // Arrange
-            var Chapeu = _faker.Random.String2(10);
-            var Titulo = _faker.Random.String2(50);
-            var Descricao = string.Empty;
-            var Editor = _faker.Name.FullName();
+            var propInfo = typeof(Noticia).GetProperty("Titulo");
 
-            //act
-            var result = Assert.Throws<DomainException>(() => new Noticia(Chapeu, Titulo, Descricao, Editor));
+            // Act
+            var maxLengthAttribute = (MaxLengthAttribute)propInfo.GetCustomAttributes(typeof(MaxLengthAttribute), true)[0];
 
-            //Assert
-            Assert.Equal("O texto não pode estar vazio!", result.Message);
-
-
+            // Assert
+            Assert.Equal(100, maxLengthAttribute.Length);
         }
 
-
-        [Fact(DisplayName = "Validando tamanho maximo do chapeu")]
-        [Trait("Categoria", "Validando Noticias")]
-        public void ValidandoExceptionTamanhoMaximoChapeu()
+        [Fact]
+        public void Noticia_DeveTerAtributoRequiredNaPropriedadeChapeu()
         {
             // Arrange
-            var Chapeu = _faker.Random.String2(41); // Generate a string longer than 40 characters
-            var Titulo = _faker.Random.String2(50);
-            var Descricao = _faker.Random.String2(100);
-            var Editor = _faker.Name.FullName();
+            var propInfo = typeof(Noticia).GetProperty("Chapeu");
 
-            // Act & Assert
-            var exception = Assert.Throws<DomainException>(() => new Noticia(Chapeu, Titulo, Descricao, Editor));
-            Assert.Equal("O chapéu deve ter até 40 caracteres!", exception.Message);
+            // Act
+            var hasRequiredAttribute = propInfo.GetCustomAttributes(typeof(RequiredAttribute), true).Length > 0;
+
+            // Assert
+            Assert.True(hasRequiredAttribute, "Chapeu é obrigatório");
+        }
+
+        [Fact]
+        public void Noticia_DeveTerMaxLength50NaPropriedadeChapeu()
+        {
+            // Arrange
+            var propInfo = typeof(Noticia).GetProperty("Chapeu");
+
+            // Act
+            var maxLengthAttribute = (MaxLengthAttribute)propInfo.GetCustomAttributes(typeof(MaxLengthAttribute), true)[0];
+
+            // Assert
+            Assert.Equal(50, maxLengthAttribute.Length);
+        }
+
+        [Fact]
+        public void Noticia_DeveTerAtributoRequiredNaPropriedadeDescricao()
+        {
+            // Arrange
+            var propInfo = typeof(Noticia).GetProperty("Descricao");
+
+            // Act
+            var hasRequiredAttribute = propInfo.GetCustomAttributes(typeof(RequiredAttribute), true).Length > 0;
+
+            // Assert
+            Assert.True(hasRequiredAttribute, "Descricao é obrigatório");
+        }
+
+        [Fact]
+        public void Noticia_DeveTerAtributoRequiredNaPropriedadeEditor()
+        {
+            // Arrange
+            var propInfo = typeof(Noticia).GetProperty("Editor");
+
+            // Act
+            var hasRequiredAttribute = propInfo.GetCustomAttributes(typeof(RequiredAttribute), true).Length > 0;
+
+            // Assert
+            Assert.True(hasRequiredAttribute, "Editor é obrigatório");
         }
     }
 }

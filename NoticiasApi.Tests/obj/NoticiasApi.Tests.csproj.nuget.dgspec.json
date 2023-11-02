@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Nova pasta\\Projetos\\NoticiasApi\\NoticiasApi.Tests\\NoticiasApi.Tests.csproj": {}
+    "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\NoticiasApi.Tests\\NoticiasApi.Tests.csproj": {}
   },
   "projects": {
-    "E:\\Nova pasta\\Projetos\\NoticiasApi\\BlogNoticias\\BlogNoticias.csproj": {
+    "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\BlogNoticias\\BlogNoticias.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Nova pasta\\Projetos\\NoticiasApi\\BlogNoticias\\BlogNoticias.csproj",
+        "projectUniqueName": "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\BlogNoticias\\BlogNoticias.csproj",
         "projectName": "BlogNoticias",
-        "projectPath": "E:\\Nova pasta\\Projetos\\NoticiasApi\\BlogNoticias\\BlogNoticias.csproj",
+        "projectPath": "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\BlogNoticias\\BlogNoticias.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "E:\\Nova pasta\\Projetos\\NoticiasApi\\BlogNoticias\\obj\\",
+        "outputPath": "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\BlogNoticias\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AspNetCore.HealthChecks.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "AspNetCore.HealthChecks.SqlServer": {
               "target": "Package",
               "version": "[6.0.1, )"
@@ -84,6 +88,14 @@
               "target": "Package",
               "version": "[6.0.10, )"
             },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[6.0.24, )"
+            },
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.20, )"
@@ -101,6 +113,10 @@
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
               "version": "[6.32.2, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.2.0, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
@@ -142,14 +158,14 @@
         }
       }
     },
-    "E:\\Nova pasta\\Projetos\\NoticiasApi\\NoticiasApi.Tests\\NoticiasApi.Tests.csproj": {
+    "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\NoticiasApi.Tests\\NoticiasApi.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Nova pasta\\Projetos\\NoticiasApi\\NoticiasApi.Tests\\NoticiasApi.Tests.csproj",
+        "projectUniqueName": "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\NoticiasApi.Tests\\NoticiasApi.Tests.csproj",
         "projectName": "NoticiasApi.Tests",
-        "projectPath": "E:\\Nova pasta\\Projetos\\NoticiasApi\\NoticiasApi.Tests\\NoticiasApi.Tests.csproj",
+        "projectPath": "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\NoticiasApi.Tests\\NoticiasApi.Tests.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "E:\\Nova pasta\\Projetos\\NoticiasApi\\NoticiasApi.Tests\\obj\\",
+        "outputPath": "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\NoticiasApi.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -166,8 +182,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Nova pasta\\Projetos\\NoticiasApi\\BlogNoticias\\BlogNoticias.csproj": {
-                "projectPath": "E:\\Nova pasta\\Projetos\\NoticiasApi\\BlogNoticias\\BlogNoticias.csproj"
+              "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\BlogNoticias\\BlogNoticias.csproj": {
+                "projectPath": "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\BlogNoticias\\BlogNoticias.csproj"
               }
             }
           }
@@ -182,13 +198,33 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AspNetCore.HealthChecks.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Bogus": {
               "target": "Package",
               "version": "[34.0.2, )"
             },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[6.0.24, )"
+            },
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.1.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "SolrNet": {
+              "target": "Package",
+              "version": "[1.1.1, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
