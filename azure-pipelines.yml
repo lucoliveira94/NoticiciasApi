@@ -2,8 +2,6 @@
 # Build a Docker image
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
-
-
 trigger:
 - master
 
@@ -15,23 +13,24 @@ variables:
 
 stages:
 - stage: Build
-  displayName: Build image
+  displayName: 'Build image'
   jobs:
-  - job: Build
-    displayName: Build
+  - job: 'Build'
     pool:
-      vmImage: ubuntu-latest
+      vmImage: 'ubuntu-latest'
     steps:
-        - task: Docker@2
-      displayName: Build an image
+    - task: Docker@2
+      displayName: 'Build an image'
       inputs:
-        command: build
+        command: 'build'
         dockerfile: '$(Build.SourcesDirectory)/BlogNoticias/Dockerfile'
         tags: |
           $(tag)
 
-    - task: VSTest@3
-  inputs:
-    testSelector: 'testRun'
-    searchFolder: '$(System.DefaultWorkingDirectory)'
-
+    - task: VSTest@2
+      inputs:
+        testSelector: 'testAssemblies'
+        testAssemblyVer2: |
+          **\$(BuildConfiguration)\*test*.dll
+          !**\obj\**
+        searchFolder: '$(System.DefaultWorkingDirectory)'
