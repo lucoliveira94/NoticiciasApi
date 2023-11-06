@@ -222,6 +222,10 @@
               "target": "Package",
               "version": "[34.0.2, )"
             },
+            "Docker.DotNet": {
+              "target": "Package",
+              "version": "[3.125.15, )"
+            },
             "FakeItEasy": {
               "target": "Package",
               "version": "[7.4.0, )"

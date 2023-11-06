@@ -8,25 +8,34 @@ namespace BlogNoticias.Controllers
     [Route("[Controller]")]
     public class EditorController : ControllerBase
     {
-        private EditorService _editorService;
+        private readonly ILogger<EditorController> _logger;
+        private readonly IEditorService _service;
+        private readonly HttpClient _httpClient;
 
-        public EditorController(EditorService cadastroService)
+
+        public EditorController(ILogger<EditorController> logger, IEditorService service)
         {
-            _editorService = cadastroService;
+            _logger = logger;
+            _service = service;
         }
 
         [HttpPost("cadastro")]
         public async Task<IActionResult> CadastraUsuario(CreateEditorDto dto)
         {
-            await _editorService.Cadastra(dto);
+            await _service.Cadastra(dto);
             return Ok("Usuário cadastrado!");
         }
 
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginEditorDto dto)
         {
-            var token = await _editorService.Login(dto);
+            var token = await _service.Login(dto);
             return Ok(token);
+        }
+
+        internal Task<OkObjectResult> Get(CreateEditorDto cadastraEditorDto)
+        {
+            throw new NotImplementedException();
         }
     }
 }

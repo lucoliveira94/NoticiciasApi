@@ -1277,3 +1277,4 @@ D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Debug\net6
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Debug\net6.0\NoticiasApi.Tests.pdb
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Debug\net6.0\NoticiasApi.Tests.genruntimeconfig.cache
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Debug\net6.0\ref\NoticiasApi.Tests.dll
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\Docker.DotNet.dll

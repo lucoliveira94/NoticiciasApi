@@ -1,44 +1,50 @@
-﻿//using BlogNoticias.Data.Dtos;
-//using BlogNoticias.Services;
-//using FakeItEasy;
-//using FluentAssertions;
-//using Microsoft.Extensions.DependencyInjection;
-//using Newtonsoft.Json;
-//using TestExamples.Api.IntegrationTests.TestUtilities.TestHost;
-//using Microsoft.AspNetCore.Mvc.Testing;
+﻿using BlogNoticias.Controllers;
+using BlogNoticias.Data.Dtos;
+using BlogNoticias.Services;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Moq;
 
-//namespace NoticiasApi.Tests.Controllers
-//{
-//    public class EditorControllerTest
-//    {
-//        public class EditorCadastro
-//        {
-//            [Fact]
-//            public async Task Should_Cadastrar_Editor()
-//            {
-//                // Arrange
-//                var editorService = A.Fake<IEditorService>();
+namespace API.Tests
+{
+    public class EditorControllerTests
+    {
+        private EditorController _controller;
+        private Mock<IEditorService> _serviceMock;
+        private Mock<ILogger<EditorController>> _loggerMock;
 
-//                var testServerContainer = new TestServerContainer(serviceCollection =>
-//                {
-//                    serviceCollection.AddScoped(factory => editorService);
-//                });
+        public EditorControllerTests()
+        {
+            // Configurar o mock do serviço
+            _serviceMock = new Mock<IEditorService>();
 
-//                using var httpClient = testServerContainer.HttpClient;
+            // Configurar o mock do logger
+            _loggerMock = new Mock<ILogger<EditorController>>();
 
-//                var expectedEditor = new CreateEditorDto(
-//                    username: "Lucas",
-//                    cpf: "1234567890",
-//                    password: "Test@ando123",
-//                    repassword: "Test@ando123");
+            // Inicializar o controller com o mock do serviço e do logger
+            _controller = new EditorController(_loggerMock.Object, _serviceMock.Object);
+        }
 
-//                // Act
-//                var response = await httpClient.GetAsync($"/Editor/cadastro?username={expectedEditor.Username}&cpf={expectedEditor.CPF}&password={expectedEditor.Password}&repassword={expectedEditor.RePassword}");
+        [Fact]
+        public async Task Get_ReturnsOkResultWithData()
+        {
+            // Arrange
+            var cadastraEditorDto = new CreateEditorDto(
+                username:"Lucas",
+                cpf: "1234567890",
+                password:"Test@ando123",
+                repassword: "Test@ando123"
+                );
 
-//                // Assert
-//                Assert.True( response.IsSuccessStatusCode );
-//            }
-//        }
-//    }
-//}
+            _serviceMock.Setup(s => s.Cadastra(cadastraEditorDto));
 
+            // Act
+            var result = await _controller.Get(cadastraEditorDto);
+
+            // Assert
+            Assert.IsType<OkObjectResult>(result);
+            var okResult = (OkObjectResult)result;
+            Assert.Equal(cadastraEditorDto, okResult.Value);
+        }
+    }
+}

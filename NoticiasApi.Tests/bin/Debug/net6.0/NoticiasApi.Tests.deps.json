@@ -36,6 +36,7 @@
         "dependencies": {
           "AspNetCore.HealthChecks.MySql": "7.0.0",
           "Bogus": "34.0.2",
+          "Docker.DotNet": "3.125.15",
           "FakeItEasy": "7.4.0",
           "FluentAssertions": "6.12.0",
           "Microsoft.AspNetCore.Mvc.Testing": "6.0.24",
@@ -552,6 +553,22 @@
         }
       },
       "coverlet.collector/3.1.2": {},
+      "Docker.DotNet/3.125.15": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "System.Buffers": "4.5.1",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Docker.DotNet.dll": {
+            "assemblyVersion": "3.125.0.0",
+            "fileVersion": "3.125.15.1"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/Docker.DotNet.dll": {}
+        }
+      },
       "DocumentFormat.OpenXml/2.20.0": {
         "dependencies": {
           "System.IO.Packaging": "4.7.0"
@@ -5816,6 +5833,13 @@
       "sha512": "sha512-wuLDIDKD5XMt0A7lE31JPenT7QQwZPFkP5rRpdJeblyXZ9MGLI8rYjvm5fvAKln+2/X+4IxxQDxBtwdrqKNLZw==",
       "path": "coverlet.collector/3.1.2",
       "hashPath": "coverlet.collector.3.1.2.nupkg.sha512"
+    },
+    "Docker.DotNet/3.125.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XN8FKxVv8Mjmwu104/Hl9lM61pLY675s70gzwSj8KR5pwblo8HfWLcCuinh9kYsqujBkMH4HVRCEcRuU6al4BQ==",
+      "path": "docker.dotnet/3.125.15",
+      "hashPath": "docker.dotnet.3.125.15.nupkg.sha512"
     },
     "DocumentFormat.OpenXml/2.20.0": {
       "type": "package",

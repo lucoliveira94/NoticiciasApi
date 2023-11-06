@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qagYwoSTs9sVcpLZuCpVcrQOaRjiHw2/RaJhFGHS8I6PQdCuyKPW2EyloiQeYn63v980ArYdOja3HNFSb+FwwA==",
+  "dgSpecHash": "dIeHiswUp2f+sOL7qGLzKj4mgc98YeWKl8It28eKgv/GeiLO724uKzy6r9gN06eMlHqAte4HR9iD9Iz2cBjqWA==",
   "success": true,
   "projectFilePath": "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\NoticiasApi.Tests\\NoticiasApi.Tests.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,7 @@
     "C:\\Users\\lucas\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\commonservicelocator\\2.0.2\\commonservicelocator.2.0.2.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
+    "C:\\Users\\lucas\\.nuget\\packages\\docker.dotnet\\3.125.15\\docker.dotnet.3.125.15.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\documentformat.openxml\\2.20.0\\documentformat.openxml.2.20.0.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\fakeiteasy\\7.4.0\\fakeiteasy.7.4.0.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\fluentassertions\\6.12.0\\fluentassertions.6.12.0.nupkg.sha512",
