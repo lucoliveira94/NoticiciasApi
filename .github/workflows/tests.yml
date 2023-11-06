@@ -33,7 +33,7 @@ jobs:
       - name: Create Container
         run: |
           docker pull postgres
-          docker run  -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=1020304050 -e POSTGRES_DB=postgres -p 5432:5432 -d postgres
+          docker run  -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=9816823412 -e POSTGRES_DB=editor -p 5432:5432 -d postgres
           
   
       - name: Build and test
