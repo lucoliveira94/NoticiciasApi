@@ -38,5 +38,5 @@ jobs:
   
       - name: Build and test
         run: |              
-          dotnet build --configuration Release
-          dotnet test --configuration Release
+          dotnet build BlogNoticias/NoticiasApi.csproj
+          dotnet test NoticiasApi.Tests/NoticiasApi.Tests.csproj
