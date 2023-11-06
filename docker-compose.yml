@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  noticiasapi:
+    image: ${DOCKER_REGISTRY-}noticiasapi
+    build:
+      context: .
+      dockerfile: BlogNoticias/Dockerfile

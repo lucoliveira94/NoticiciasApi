@@ -4,12 +4,12 @@
     "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\NoticiasApi.Tests\\NoticiasApi.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\BlogNoticias\\BlogNoticias.csproj": {
+    "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\BlogNoticias\\NoticiasApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\BlogNoticias\\BlogNoticias.csproj",
-        "projectName": "BlogNoticias",
-        "projectPath": "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\BlogNoticias\\BlogNoticias.csproj",
+        "projectUniqueName": "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\BlogNoticias\\NoticiasApi.csproj",
+        "projectName": "NoticiasApi",
+        "projectPath": "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\BlogNoticias\\NoticiasApi.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
         "outputPath": "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\BlogNoticias\\obj\\",
         "projectStyle": "PackageReference",
@@ -76,6 +76,14 @@
               "target": "Package",
               "version": "[2.20.0, )"
             },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
+            "Microsoft.ApplicationInsights.AspNetCore": {
+              "target": "Package",
+              "version": "[2.15.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.20, )"
@@ -113,6 +121,14 @@
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
               "version": "[6.32.2, )"
+            },
+            "Microsoft.NET.Build.Containers": {
+              "target": "Package",
+              "version": "[7.0.403, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.19.4, )"
             },
             "MySql.Data": {
               "target": "Package",
@@ -182,8 +198,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\BlogNoticias\\BlogNoticias.csproj": {
-                "projectPath": "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\BlogNoticias\\BlogNoticias.csproj"
+              "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\BlogNoticias\\NoticiasApi.csproj": {
+                "projectPath": "D:\\Arquitetura de Sistemas .NET com Azure\\tech3\\BlogNoticias\\NoticiasApi.csproj"
               }
             }
           }
@@ -206,6 +222,14 @@
               "target": "Package",
               "version": "[34.0.2, )"
             },
+            "FakeItEasy": {
+              "target": "Package",
+              "version": "[7.4.0, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
             "Microsoft.AspNetCore.Mvc.Testing": {
               "target": "Package",
               "version": "[6.0.24, )"
@@ -214,9 +238,17 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Microsoft.NET.Build.Containers": {
+              "target": "Package",
+              "version": "[7.0.403, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.1.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.69, )"
             },
             "MySql.Data": {
               "target": "Package",

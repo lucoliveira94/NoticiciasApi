@@ -5,8 +5,11 @@ using Microsoft.AspNetCore.Identity;
 
 namespace BlogNoticias.Services
 {
-    public class EditorService
+    public class EditorService : IEditorService
     {
+        private readonly ILogger<EditorService> _logger;
+        private readonly HttpClient _httpClient;
+
         private IMapper _mapper;
         private UserManager<Editor> _userManager;
         private SignInManager<Editor> _signInManager;

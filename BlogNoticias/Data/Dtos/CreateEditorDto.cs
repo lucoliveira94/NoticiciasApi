@@ -14,6 +14,14 @@ namespace BlogNoticias.Data.Dtos
         [Required]
         [Compare("Password")]
         public string RePassword { get; set; }
+
+        public CreateEditorDto(string username, string cpf, string password, string repassword)
+        {
+            Username = username;
+            CPF = cpf;
+            Password = password;
+            RePassword = repassword;
+        }
     }
 }
 

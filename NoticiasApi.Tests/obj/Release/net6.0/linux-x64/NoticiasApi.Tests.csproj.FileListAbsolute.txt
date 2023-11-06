@@ -1,0 +1,7 @@
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Release\net6.0\linux-x64\CoverletSourceRootsMapping
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Release\net6.0\linux-x64\NoticiasApi.Tests.csproj.AssemblyReference.cache
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Release\net6.0\linux-x64\MvcTestingAppManifest.json
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Release\net6.0\linux-x64\NoticiasApi.Tests.GeneratedMSBuildEditorConfig.editorconfig
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Release\net6.0\linux-x64\NoticiasApi.Tests.AssemblyInfoInputs.cache
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Release\net6.0\linux-x64\NoticiasApi.Tests.AssemblyInfo.cs
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Release\net6.0\linux-x64\NoticiasApi.Tests.csproj.CoreCompileInputs.cache

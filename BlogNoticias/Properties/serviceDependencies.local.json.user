@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "appInsights1": {
+      "restored": true,
+      "restoreTime": "2023-11-06T12:17:47.5121241Z"
+    }
+  },
+  "parameters": {
+    "appInsights1.resourceGroupName": {
+      "Name": "appInsights1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "Challenge3"
+    },
+    "appInsights1.subscriptionId": {
+      "Name": "appInsights1.subscriptionId",
+      "Type": "subscription",
+      "Value": "edc67840-474b-46bd-91e7-630f72327e60"
+    }
+  }
+}

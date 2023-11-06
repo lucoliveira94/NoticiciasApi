@@ -1,0 +1,25 @@
+name: dockercompose4131736543064789660
+services:
+  noticiasapi:
+    build:
+      context: D:\Arquitetura de Sistemas .NET com Azure\tech3
+      dockerfile: BlogNoticias/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: noticiasapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 80
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\lucas\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+networks:
+  default:
+    name: dockercompose4131736543064789660_default

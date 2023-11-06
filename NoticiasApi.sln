@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogNoticias", "BlogNoticias\BlogNoticias.csproj", "{6FC2DDFD-FD9D-48B7-8E98-DE1BCB51B349}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoticiasApi", "BlogNoticias\NoticiasApi.csproj", "{6FC2DDFD-FD9D-48B7-8E98-DE1BCB51B349}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3AD879E5-D7E5-4DB4-81D3-FC2FA69D80AE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3664F45E-260E-436C-A7F4-0CAB4A7ED2EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoticiasApi.Tests", "NoticiasApi.Tests\NoticiasApi.Tests.csproj", "{63BCD26A-36BF-4F2D-897F-8B3F2B5CACED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoticiasApi.Tests", "NoticiasApi.Tests\NoticiasApi.Tests.csproj", "{63BCD26A-36BF-4F2D-897F-8B3F2B5CACED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

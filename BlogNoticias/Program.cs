@@ -16,14 +16,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 #region [Database]
-var connectionString = builder.Configuration.GetConnectionString("NoticiaConnection");
+var connectionDbString = builder.Configuration.GetConnectionString("NoticiaConnection");
 builder.Services.AddDbContext<NoticiaContext>(opts =>
-    opts.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+    opts.UseMySql(connectionDbString, ServerVersion.AutoDetect(connectionDbString)));
 #endregion
 
 #region [Healthcheck]
 builder.Services.AddHealthChecks().
-    AddMySql(connectionString, name: "mysql-check", failureStatus:HealthStatus.Unhealthy);
+    AddMySql(connectionDbString, name: "mysql-check", failureStatus:HealthStatus.Unhealthy);
 
 builder.Services.AddHealthChecksUI(opt =>
 {
@@ -67,6 +67,7 @@ builder.Services.AddAuthentication(options =>
         ClockSkew = TimeSpan.Zero
     };
 });
+builder.Services.AddApplicationInsightsTelemetry(builder.Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]);
 #endregion
 
 
