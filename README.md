@@ -4,4 +4,5 @@
 #A api conta também com um cadastro de Editores, que tem implementado um método de autenticação JWT que retorna um token no caso do login ser bem sucedido.
 
 #A aplicação foi configurada para ser executada na plataforma de nuvem Azure utilizando o Github Actions, também conta com monitoração utilizando a ferramenta Application Insights
-#Foram implantados testes unitários utilizando Xunit e testes de integração utilizando docker para o banco de testes
+
+#Foram implantados testes unitários utilizando Xunit e testes de integração utilizando pipeline do github actions para realizar o build e teste com docker para o banco de testes
