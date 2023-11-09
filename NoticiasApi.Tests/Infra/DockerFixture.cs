@@ -1,32 +1,29 @@
 ﻿using Docker.DotNet;
 using Docker.DotNet.Models;
-using Microsoft.Extensions.Configuration;
-using Moq;
+using Microsoft.AspNetCore.Mvc.Testing;
 
-namespace API.Tests;
+namespace NoticiasApi.tests;
 
-public class DockerFixture : IDisposable
+public class DockerFixture : IDisposable, IAsyncLifetime
 {
     private DockerClient _dockerClient;
     private string _containerId;
-    private readonly string _environment;
 
     public DockerFixture()
     {
-
         _dockerClient = new DockerClientConfiguration().CreateClient();
 
         var createContainerResponse = _dockerClient.Containers.CreateContainerAsync(new CreateContainerParameters
         {
-            Image = "mysql",
+            Image = "postgres",
             Env = new List<string> { "POSTGRES_PASSWORD=9816823412" },
             HostConfig = new HostConfig
             {
                 PortBindings = new Dictionary<string, IList<PortBinding>>()
-          {
-              { "5432/tcp", new List<PortBinding> { new PortBinding { HostPort = "5432" } } }
-          },
-                PublishAllPorts = true // Optional: Set this to true if you want to publish all exposed ports
+                {
+                    { "5432/tcp", new List<PortBinding> { new PortBinding { HostPort = "5432" } } }
+                },
+                PublishAllPorts = true 
             }
         }).GetAwaiter().GetResult();
 
@@ -48,5 +45,15 @@ public class DockerFixture : IDisposable
         _dockerClient.Containers.StopContainerAsync(_containerId, new ContainerStopParameters()).GetAwaiter().GetResult();
         _dockerClient.Containers.RemoveContainerAsync(_containerId, new ContainerRemoveParameters()).GetAwaiter().GetResult();
         _dockerClient.Dispose();
+    }
+
+    public Task InitializeAsync()
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task DisposeAsync()
+    {
+        throw new NotImplementedException();
     }
 }

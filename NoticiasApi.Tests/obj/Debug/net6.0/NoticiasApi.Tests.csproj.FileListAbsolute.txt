@@ -733,6 +733,12 @@ C:\Users\lucas\Downloads\NoticiasApi-master\NoticiasApi-master\NoticiasApi.Tests
 C:\Users\lucas\Downloads\NoticiasApi-master\NoticiasApi-master\NoticiasApi.Tests\obj\Debug\net6.0\NoticiasApi.Tests.genruntimeconfig.cache
 C:\Users\lucas\Downloads\NoticiasApi-master\NoticiasApi-master\NoticiasApi.Tests\obj\Debug\net6.0\ref\NoticiasApi.Tests.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\CoverletSourceRootsMapping
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Debug\net6.0\NoticiasApi.Tests.csproj.AssemblyReference.cache
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Debug\net6.0\MvcTestingAppManifest.json
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Debug\net6.0\NoticiasApi.Tests.GeneratedMSBuildEditorConfig.editorconfig
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Debug\net6.0\NoticiasApi.Tests.AssemblyInfoInputs.cache
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Debug\net6.0\NoticiasApi.Tests.AssemblyInfo.cs
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Debug\net6.0\NoticiasApi.Tests.csproj.CoreCompileInputs.cache
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\testhost.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\NoticiasApi.deps.json
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\NoticiasApi.runtimeconfig.json
@@ -1039,7 +1045,11 @@ D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\Castle.Core.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\CommonServiceLocator.dll
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\Docker.DotNet.dll
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\Docker.DotNet.X509.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\DocumentFormat.OpenXml.dll
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\EntityFramework.SqlServer.dll
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\EntityFramework.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\FakeItEasy.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\FluentAssertions.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\Fractions.dll
@@ -1124,20 +1134,26 @@ D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\MySqlConnector.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\Npgsql.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\NuGet.Frameworks.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\BouncyCastle.Crypto.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\Prometheus.NetCore.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\Prometheus.NetStandard.dll
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\ICSharpCode.SharpZipLib.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\CommonServiceLocator.SolrNet.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\SolrNet.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\SQLitePCLRaw.batteries_v2.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\SQLitePCLRaw.core.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\Renci.SshNet.dll
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\SshNet.Security.Cryptography.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\System.CodeDom.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\System.Data.SqlClient.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\System.Diagnostics.PerformanceCounter.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\System.Drawing.Common.dll
@@ -1150,6 +1166,7 @@ D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\System.Text.Json.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\Testcontainers.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\xunit.abstractions.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\xunit.assert.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\xunit.core.dll
@@ -1241,6 +1258,9 @@ D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\runtimes\win-x64\native\k5sprt64.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\runtimes\win-x64\native\krb5_64.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\runtimes\win-x64\native\krbcc64.dll
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\runtimes\alpine-x64\native\libe_sqlite3.so
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\runtimes\linux-arm\native\libe_sqlite3.so
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\runtimes\linux-arm64\native\libe_sqlite3.so
@@ -1256,6 +1276,8 @@ D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\runtimes\win-arm64\native\e_sqlite3.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\runtimes\win-x64\native\e_sqlite3.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
@@ -1265,16 +1287,9 @@ D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\NoticiasApi.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\NoticiasApi.pdb
-D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Debug\net6.0\NoticiasApi.Tests.csproj.AssemblyReference.cache
-D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Debug\net6.0\MvcTestingAppManifest.json
-D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Debug\net6.0\NoticiasApi.Tests.GeneratedMSBuildEditorConfig.editorconfig
-D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Debug\net6.0\NoticiasApi.Tests.AssemblyInfoInputs.cache
-D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Debug\net6.0\NoticiasApi.Tests.AssemblyInfo.cs
-D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Debug\net6.0\NoticiasApi.Tests.csproj.CoreCompileInputs.cache
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Debug\net6.0\NoticiasApi.Tests.csproj.CopyComplete
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Debug\net6.0\NoticiasApi.Tests.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Debug\net6.0\refint\NoticiasApi.Tests.dll
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Debug\net6.0\NoticiasApi.Tests.pdb
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Debug\net6.0\NoticiasApi.Tests.genruntimeconfig.cache
 D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\obj\Debug\net6.0\ref\NoticiasApi.Tests.dll
-D:\Arquitetura de Sistemas .NET com Azure\tech3\NoticiasApi.Tests\bin\Debug\net6.0\Docker.DotNet.dll

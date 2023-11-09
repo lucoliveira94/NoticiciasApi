@@ -2,9 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Primitives;
 
-namespace API.Tests.Infra
-{  
-
+namespace NoticiasApi.Tests.Infra;
     public class TestConfiguration : IConfiguration
     {
         private readonly Dictionary<string, string> _configValues;
@@ -35,6 +33,3 @@ namespace API.Tests.Infra
             throw new System.NotImplementedException();
         }
     }
-
-}
-

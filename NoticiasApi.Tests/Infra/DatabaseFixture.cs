@@ -1,4 +1,4 @@
-﻿namespace API.Tests;
+﻿namespace NoticiasApi.tests;
 
 public class IntegrationTests : IClassFixture<DockerFixture>
 {
@@ -8,7 +8,4 @@ public class IntegrationTests : IClassFixture<DockerFixture>
     {
         _dockerFixture = dockerFixture;
     }
-
-
-    
 }

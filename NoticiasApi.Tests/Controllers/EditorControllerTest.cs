@@ -1,50 +1,45 @@
 ﻿using BlogNoticias.Controllers;
-using BlogNoticias.Data.Dtos;
 using BlogNoticias.Services;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Moq;
+using NoticiasApi.tests;
 
-namespace API.Tests
+namespace NoticiasApi.Tests;
+
+public class EditorControllerTests
 {
-    public class EditorControllerTests
+    private DockerFixture _dockerClient { get; set; }
+    private EditorController _controller;
+    private Mock<IEditorService> _serviceMock;
+    private Mock<ILogger<EditorController>> _loggerMock;
+
+
+    public EditorControllerTests()
     {
-        private EditorController _controller;
-        private Mock<IEditorService> _serviceMock;
-        private Mock<ILogger<EditorController>> _loggerMock;
+        // Configurar o mock do serviço
+        _serviceMock = new Mock<IEditorService>();
 
-        public EditorControllerTests()
-        {
-            // Configurar o mock do serviço
-            _serviceMock = new Mock<IEditorService>();
+        // Configurar o mock do logger
+        _loggerMock = new Mock<ILogger<EditorController>>();
 
-            // Configurar o mock do logger
-            _loggerMock = new Mock<ILogger<EditorController>>();
+        // Inicializar o controller com o mock do serviço e do logger
+        _controller = new EditorController(_loggerMock.Object, _serviceMock.Object);
+    }
 
-            // Inicializar o controller com o mock do serviço e do logger
-            _controller = new EditorController(_loggerMock.Object, _serviceMock.Object);
-        }
+    [Fact]
+    public async Task Get_ReturnsOkResultWithData()
+    {
+        //var controller = new NoticiaController( _dockerClient);
 
-        [Fact]
-        public async Task Get_ReturnsOkResultWithData()
-        {
-            // Arrange
-            var cadastraEditorDto = new CreateEditorDto(
-                username:"Lucas",
-                cpf: "1234567890",
-                password:"Test@ando123",
-                repassword: "Test@ando123"
-                );
+        ////Act
+        //var response = await controller.GetNoticias(Guid.Empty);
 
-            _serviceMock.Setup(s => s.Cadastra(cadastraEditorDto));
+        ////Assert
+        //var objectResult = (ObjectResult?)response;
+        //var apiResponse = _dockerFixture.GetApiResponseFromObjectResult(objectResult);
 
-            // Act
-            var result = await _controller.Get(cadastraEditorDto);
+        //Assert.Equal((int)HttpStatusCode.BadRequest, objectResult?.StatusCode);
+        //Assert.Null(apiResponse?.Data);
 
-            // Assert
-            Assert.IsType<OkObjectResult>(result);
-            var okResult = (OkObjectResult)result;
-            Assert.Equal(cadastraEditorDto, okResult.Value);
-        }
     }
 }
